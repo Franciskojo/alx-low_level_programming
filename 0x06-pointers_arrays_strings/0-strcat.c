@@ -2,8 +2,8 @@
 
 /**
  * _strcat - function that concatenates two strings
- * @src: value to be input
  * @dest: value to be input
+ * @src: value to be input
  *
  * Return: void
  */
@@ -13,14 +13,14 @@ char *_strcat(char *dest, char *src)
 	int b;
 
 	a = 0;
-	while (src[a] != '\0')
+	while (dest[a] != '\0')
 	{
 		a++;
 	}
 	b = 0;
-	while (dest[b] != '\0')
+	while (src[b] != '\0')
 	{
-		src[a] = dest[b];
+		dest[a] = dest[b];
 		a++;
 		b++;
 	}
