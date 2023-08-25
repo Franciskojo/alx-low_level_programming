@@ -20,11 +20,11 @@ char *_strcat(char *dest, char *src)
 	b = 0;
 	while (src[b] != '\0')
 	{
-		dest[a] = dest[b];
+		dest[a] = src[a];
 		a++;
 		b++;
 	}
 
-	dest[b] = '\0';
+	dest[a] = '\0';
 	return (dest);
 }
